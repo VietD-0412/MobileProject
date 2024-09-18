@@ -2,7 +2,9 @@
 MobileDev Mid + Final Project
 
 Group: 14
+
 ProjectName: Chess.com Stats
+
 Members:  
 1. Doan Quang Viet
 2. Tran Anh Vu
