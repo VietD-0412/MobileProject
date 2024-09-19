@@ -42,14 +42,12 @@ public class FragmentResultAll extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_result_all, container, false);
 
-        // Find buttons by their IDs
         Button buttonToFragmentRanking = view.findViewById(R.id.ranking);
         Button buttonToFragmentRating = view.findViewById(R.id.rating);
         Button buttonToFragmentResultStandard = view.findViewById(R.id.standard);
         Button buttonToFragmentResultRapid = view.findViewById(R.id.rapid);
         Button buttonToFragmentResultBlitz = view.findViewById(R.id.blitz);
 
-        // Set up button click listeners
         buttonToFragmentRanking.setOnClickListener(v -> navigateToFragment(new FragmentRanking()));
         buttonToFragmentRating.setOnClickListener(v -> navigateToFragment(new FragmentRatingStandard()));
         buttonToFragmentResultStandard.setOnClickListener(v -> navigateToFragment(new FragmentResultStandard()));

@@ -38,21 +38,18 @@ public class ChessActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chess);
 
-        // Enable Edge-to-Edge insets handling
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
-        // Initialize LineChart and set it to hidden by default
         lineChart = findViewById(R.id.lineChart);
         lineChart.setVisibility(View.GONE);
         pieChart = findViewById(R.id.pieChart);
         pieChart.setVisibility(View.GONE);
 
 
-        // Load fragments
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.fragment_profile, new FragmentProfile())
                 .commit();
@@ -69,7 +66,6 @@ public class ChessActivity extends AppCompatActivity {
         Log.i(TAG, "onCreate() called");
     }
 
-    // Method to update the chart when required by a fragment
     public void updateLineChart(ArrayList<Entry> entries, String[] years) {
         LineDataSet lineDataSet = new LineDataSet(entries, "Rating");
         lineDataSet.setColor(getResources().getColor(android.R.color.holo_blue_dark));
@@ -139,7 +135,6 @@ public class ChessActivity extends AppCompatActivity {
 
         PieData pieData = new PieData(pieDataSet);
 
-        // Set the data to the pie chart
         pieChart.setData(pieData);
 
         pieChart.setDrawHoleEnabled(true);
@@ -161,7 +156,6 @@ public class ChessActivity extends AppCompatActivity {
         pieChart.animateY(1400, Easing.EaseInOutQuad);
     }
 
-    // Method to hide the Pie Chart
     public void hidePieChart() {
         pieChart.setVisibility(View.GONE);
     }
@@ -196,7 +190,6 @@ public class ChessActivity extends AppCompatActivity {
         Log.i(TAG, "onDestroy() called");
     }
 
-    // Menu for toolbar
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.toolbar_menu,menu);
@@ -207,7 +200,6 @@ public class ChessActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int itemId = item.getItemId();
         if (itemId == R.id.refresh) {
-            // Do actual threading here
             Toast.makeText(this, "Refresh", Toast.LENGTH_SHORT).show();
             return true;
         } else if (itemId == R.id.action_sth) {

@@ -109,7 +109,6 @@
         android:layout_marginTop="100dp"
         android:padding="16dp">
 
-        <!-- Pie Chart -->
         <com.github.mikephil.charting.charts.PieChart
             android:id="@+id/pieChart"
             android:layout_width="match_parent"

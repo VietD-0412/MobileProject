@@ -70,7 +70,6 @@ public class FragmentRatingStandard extends Fragment {
         transaction.commit();
     }
 
-    // Method to update the chart when this fragment is displayed
     private void displayLineChart() {
         ChessActivity activity = (ChessActivity) getActivity();
         if (activity != null) {
@@ -88,7 +87,6 @@ public class FragmentRatingStandard extends Fragment {
             entries.add(new Entry(10, 2731));
 
             String[] years = {"2004", "2006", "2008", "2010", "2012", "2014", "2016", "2018", "2020", "2022", "2024"};
-
             activity.updateLineChart(entries, years);
         }
     }

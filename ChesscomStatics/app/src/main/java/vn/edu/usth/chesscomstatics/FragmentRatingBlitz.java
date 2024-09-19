@@ -67,14 +67,12 @@ public class FragmentRatingBlitz extends Fragment {
         Button buttonToFragmentRatingRapid = view.findViewById(R.id.rapid);
         Button buttonToFragmentRatingPuzzle = view.findViewById(R.id.puzzle);
 
-        // Set up listeners for navigation between fragments
         buttonToFragmentRanking.setOnClickListener(v -> navigateToFragment(new FragmentRanking()));
         buttonToFragmentResult.setOnClickListener(v -> navigateToFragment(new FragmentResultAll()));
         buttonToFragmentRatingStandard.setOnClickListener(v -> navigateToFragment(new FragmentRatingStandard()));
         buttonToFragmentRatingRapid.setOnClickListener(v -> navigateToFragment(new FragmentRatingRapid()));
         buttonToFragmentRatingPuzzle.setOnClickListener(v -> navigateToFragment(new FragmentRatingPuzzle()));
 
-        // Add the chart display logic here
         displayLineChart();
 
         return view;
@@ -87,11 +85,9 @@ public class FragmentRatingBlitz extends Fragment {
         transaction.commit();
     }
 
-    // Method to update the chart when this fragment is displayed
     private void displayLineChart() {
         ChessActivity activity = (ChessActivity) getActivity();
         if (activity != null) {
-            // Example data for the chart
             ArrayList<Entry> entries = new ArrayList<>();
             entries.add(new Entry(0, 2329));
             entries.add(new Entry(1, 2519));
@@ -107,8 +103,6 @@ public class FragmentRatingBlitz extends Fragment {
 
 
             String[] years = {"2004", "2006", "2008", "2010", "2012", "2014", "2016", "2018", "2020", "2022", "2024"};
-
-            // Update the chart in ChessActivity
             activity.updateLineChart(entries, years);
         }
     }
