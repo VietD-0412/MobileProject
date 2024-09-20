@@ -60,7 +60,7 @@ public class FragmentResultAll extends Fragment {
     private void displayPieChart(){
         ChessActivity activity = (ChessActivity) getActivity();
         if (activity != null) {
-            activity.updatePieChart(852,462,664);
+            activity.updatePieChart(852,291,664);
         }
     }
 

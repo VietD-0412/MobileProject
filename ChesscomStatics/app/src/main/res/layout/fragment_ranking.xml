@@ -57,7 +57,7 @@
             android:id="@+id/world_ranking"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="World Ranking: \n14"
+            android:text="World Ranking: \n12"
             android:textSize="35sp"
             android:padding="8dp"
             android:textColor="@color/black"/>
