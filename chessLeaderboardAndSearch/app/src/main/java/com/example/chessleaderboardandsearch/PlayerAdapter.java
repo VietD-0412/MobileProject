@@ -1,4 +1,3 @@
-// PlayerAdapter.java
 package com.example.chessleaderboardandsearch;
 
 import android.view.LayoutInflater;

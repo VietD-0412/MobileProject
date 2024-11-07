@@ -1,4 +1,3 @@
-// Player.java
 package com.example.chessleaderboardandsearch;
 
 import com.google.gson.annotations.SerializedName;

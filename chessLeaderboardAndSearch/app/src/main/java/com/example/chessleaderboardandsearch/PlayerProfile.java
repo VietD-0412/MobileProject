@@ -1,4 +1,3 @@
-// PlayerProfile.java
 package com.example.chessleaderboardandsearch;
 
 public class PlayerProfile {

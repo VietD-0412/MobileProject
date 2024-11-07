@@ -1,4 +1,3 @@
-// ChessApiService.java
 package com.example.chessleaderboardandsearch;
 
 import retrofit2.Call;

@@ -3,7 +3,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <!-- Super Big Title TextView -->
     <TextView
         android:id="@+id/titleText"
         android:layout_width="wrap_content"
@@ -14,14 +13,12 @@
         android:textStyle="bold"
         android:padding="16dp" />
 
-    <!-- Search Section -->
     <FrameLayout
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
         android:layout_height="10dp"
         android:layout_weight="1" />
 
-    <!-- Framed Leaderboard Section (Lower Part) -->
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -31,13 +28,11 @@
         android:elevation="8dp"
         android:padding="8dp">
 
-        <!-- Vertical LinearLayout to stack TabLayout and ViewPager -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <!-- Tabs -->
             <com.google.android.material.tabs.TabLayout
                 android:id="@+id/tabLayout"
                 android:layout_width="match_parent"
@@ -45,7 +40,6 @@
                 android:layout_marginBottom="8dp"
                 android:contentDescription="Tab layout for navigating between leaderboards" />
 
-            <!-- ViewPager for displaying leaderboard fragments -->
             <androidx.viewpager.widget.ViewPager
                 android:id="@+id/viewPager"
                 android:layout_width="match_parent"

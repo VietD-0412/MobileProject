@@ -1,4 +1,3 @@
-// SearchLeaderboardFragment.java
 package com.example.chessleaderboardandsearch;
 
 import android.os.Bundle;
