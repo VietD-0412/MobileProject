@@ -1,6 +1,0 @@
-<!-- res/drawable/viewpager_background.xml -->
-<shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="#FFFFFF" /> <!-- Background color, can be customized -->
-    <corners android:radius="16dp" /> <!-- Corner radius to give a rounded look -->
-    <padding android:left="4dp" android:top="4dp" android:right="4dp" android:bottom="4dp" />
-</shape>
