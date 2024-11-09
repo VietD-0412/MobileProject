@@ -110,12 +110,12 @@ public class PieRapidFragment extends Fragment {
         colors.add(Color.GRAY);
         colors.add(Color.RED);
 
-        PieDataSet dataSet = new PieDataSet(entries, "Total matches");
+        PieDataSet dataSet = new PieDataSet(entries, "");
         dataSet.setColors(colors);
 
         PieData data = new PieData(dataSet);
         data.setDrawValues(true);
-        data.setValueFormatter(new PercentFormatter());
+        data.setValueFormatter(new PercentFormatter(pieChart));
         data.setValueTextSize(20f);
         data.setValueTextColor(Color.BLACK);
 
