@@ -81,7 +81,6 @@ public class ProfileFragment extends Fragment {
 
             @Override
             public void onFailure(Call<PlayerProfile> call, Throwable t) {
-                // Handle failure
             }
         });
     }
@@ -120,7 +119,6 @@ public class ProfileFragment extends Fragment {
 
             @Override
             public void onFailure(Call<Country> call, Throwable t) {
-                // Handle failure
             }
         });
     }

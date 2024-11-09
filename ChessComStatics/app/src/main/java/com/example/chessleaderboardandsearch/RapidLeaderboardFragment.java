@@ -1,4 +1,3 @@
-// RapidLeaderboardFragment.java
 package com.example.chessleaderboardandsearch;
 
 import android.os.Bundle;
@@ -16,7 +15,7 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class RapidLeaderboardFragment extends Fragment {
+public class    RapidLeaderboardFragment extends Fragment {
 
     private RecyclerView recyclerView;
     private PlayerAdapter playerAdapter;
@@ -54,7 +53,6 @@ public class RapidLeaderboardFragment extends Fragment {
 
             @Override
             public void onFailure(Call<LeaderboardResponse> call, Throwable t) {
-                // Handle failure
             }
         });
     }

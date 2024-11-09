@@ -1,4 +1,3 @@
-// Player.java
 package com.example.chessleaderboardandsearch;
 
 import com.google.gson.annotations.SerializedName;
@@ -17,9 +16,8 @@ public class Player {
     @SerializedName("rank")
     private int rank;
     @SerializedName("avatar")
-    private String avatar; // Add this field
+    private String avatar;
 
-    // Getters
     public int getPlayerId() {
         return playerId;
     }

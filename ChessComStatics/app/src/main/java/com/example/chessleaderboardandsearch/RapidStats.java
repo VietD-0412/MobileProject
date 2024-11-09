@@ -27,7 +27,7 @@ public class RapidStats {
 
     public static class Rating {
         private int rating;
-        private long date; // Add date field
+        private long date;
 
         public int getRating() {
             return rating;

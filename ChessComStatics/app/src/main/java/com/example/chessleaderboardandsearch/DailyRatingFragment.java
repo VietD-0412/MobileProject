@@ -79,7 +79,7 @@ public class DailyRatingFragment extends Fragment {
         currentRatingTextView.setText("Current Rating: " + dailyStats.getCurrentRating());
 
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy", Locale.getDefault());
-        bestRatingDateTextView.setText("Best Rating Date: " + sdf.format(new Date(dailyStats.getBestRatingDate() * 1000)));
-        currentRatingDateTextView.setText("Current Rating Date: " + sdf.format(new Date(dailyStats.getCurrentRatingDate() * 1000)));
+        bestRatingDateTextView.setText("Date: " + sdf.format(new Date(dailyStats.getBestRatingDate() * 1000)));
+        currentRatingDateTextView.setText("Date: " + sdf.format(new Date(dailyStats.getCurrentRatingDate() * 1000)));
     }
 }

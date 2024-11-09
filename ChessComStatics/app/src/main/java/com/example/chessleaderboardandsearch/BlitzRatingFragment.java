@@ -79,7 +79,7 @@ public class BlitzRatingFragment extends Fragment {
         currentRatingTextView.setText("Current Rating: " + blitzStats.getCurrentRating());
 
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy", Locale.getDefault());
-        bestRatingDateTextView.setText("Best Rating Date: " + sdf.format(new Date(blitzStats.getBestRatingDate() * 1000)));
-        currentRatingDateTextView.setText("Current Rating Date: " + sdf.format(new Date(blitzStats.getCurrentRatingDate() * 1000)));
+        bestRatingDateTextView.setText("Date: " + sdf.format(new Date(blitzStats.getBestRatingDate() * 1000)));
+        currentRatingDateTextView.setText("Date: " + sdf.format(new Date(blitzStats.getCurrentRatingDate() * 1000)));
     }
 }

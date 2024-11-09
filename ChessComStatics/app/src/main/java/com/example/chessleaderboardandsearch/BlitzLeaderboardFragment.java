@@ -1,4 +1,3 @@
-// BlitzLeaderboardFragment.java
 package com.example.chessleaderboardandsearch;
 
 import android.os.Bundle;
@@ -54,7 +53,6 @@ public class BlitzLeaderboardFragment extends Fragment {
 
             @Override
             public void onFailure(Call<LeaderboardResponse> call, Throwable t) {
-                // Handle failure
             }
         });
     }

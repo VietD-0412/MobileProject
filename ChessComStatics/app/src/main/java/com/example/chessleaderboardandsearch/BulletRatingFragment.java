@@ -79,7 +79,7 @@ public class BulletRatingFragment extends Fragment {
         currentRatingTextView.setText("Current Rating: " + bulletStats.getCurrentRating());
 
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy", Locale.getDefault());
-        bestRatingDateTextView.setText("Best Rating Date: " + sdf.format(new Date(bulletStats.getBestRatingDate() * 1000)));
-        currentRatingDateTextView.setText("Current Rating Date: " + sdf.format(new Date(bulletStats.getCurrentRatingDate() * 1000)));
+        bestRatingDateTextView.setText("Date: " + sdf.format(new Date(bulletStats.getBestRatingDate() * 1000)));
+        currentRatingDateTextView.setText("Date: " + sdf.format(new Date(bulletStats.getCurrentRatingDate() * 1000)));
     }
 }

@@ -125,6 +125,7 @@ public class PieDailyFragment extends Fragment {
         data.setValueTextColor(Color.BLACK);
 
         pieChart.setData(data);
+        pieChart.setUsePercentValues(true);
         pieChart.invalidate();
 
         pieChart.animateY(1400, Easing.EaseInOutQuad);

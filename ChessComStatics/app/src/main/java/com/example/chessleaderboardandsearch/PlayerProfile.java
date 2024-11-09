@@ -1,4 +1,3 @@
-// PlayerProfile.java
 package com.example.chessleaderboardandsearch;
 
 public class PlayerProfile {
@@ -14,7 +13,6 @@ public class PlayerProfile {
     private String country;
     private long last_online;
 
-    // Getters
     public String getUsername() {
         return username;
     }

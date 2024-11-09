@@ -10,7 +10,7 @@
         android:id="@+id/bestRatingTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Best Rating: 0"
+        android:text="Best Rating: Null"
         android:textSize="30sp"
         android:textColor="@color/black"/>
 
@@ -19,7 +19,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Date: Null"
-        android:textSize="20sp"
+        android:textSize="25sp"
         android:textColor="@color/black"
         android:layout_marginBottom="50dp"/>
 
@@ -27,7 +27,7 @@
         android:id="@+id/currentRatingTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Current Rating: 0"
+        android:text="Current Rating: Null"
         android:textColor="@color/black"
         android:textSize="30sp" />
 
@@ -37,5 +37,5 @@
         android:layout_height="wrap_content"
         android:text="Date: Null"
         android:textColor="@color/black"
-        android:textSize="20sp" />
+        android:textSize="25sp" />
 </LinearLayout>

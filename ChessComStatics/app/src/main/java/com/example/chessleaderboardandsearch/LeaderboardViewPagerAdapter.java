@@ -1,4 +1,3 @@
-// LeaderboardViewPagerAdapter.java
 package com.example.chessleaderboardandsearch;
 
 import androidx.annotation.NonNull;

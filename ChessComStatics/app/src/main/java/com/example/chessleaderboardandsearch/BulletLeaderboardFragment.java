@@ -53,7 +53,6 @@ public class BulletLeaderboardFragment extends Fragment {
 
             @Override
             public void onFailure(Call<LeaderboardResponse> call, Throwable t) {
-                // Handle failure
             }
         });
     }

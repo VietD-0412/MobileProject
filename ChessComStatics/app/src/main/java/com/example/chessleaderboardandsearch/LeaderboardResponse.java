@@ -1,4 +1,3 @@
-// LeaderboardResponse.java
 package com.example.chessleaderboardandsearch;
 
 import com.google.gson.annotations.SerializedName;
@@ -17,7 +16,6 @@ public class LeaderboardResponse {
     @SerializedName("live_bullet")
     private List<Player> liveBullet;
 
-    // Getters
     public List<Player> getDaily() {
         return daily;
     }

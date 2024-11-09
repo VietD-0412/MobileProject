@@ -19,7 +19,7 @@
         android:textColor="#000000"
         android:textSize="25sp"
         android:gravity="center"
-        android:text="Total games played: 0\nWins: 0\nDraws: 0\nLosses: 0
+        android:text="Total games played: Null\nWins: Null\nDraws: Null\nLosses: Null
 " />
 
 </LinearLayout>

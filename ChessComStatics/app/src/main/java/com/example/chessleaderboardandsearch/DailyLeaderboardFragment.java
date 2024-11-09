@@ -53,7 +53,6 @@ public class DailyLeaderboardFragment extends Fragment {
 
             @Override
             public void onFailure(Call<LeaderboardResponse> call, Throwable t) {
-                // Handle failure
             }
         });
     }
